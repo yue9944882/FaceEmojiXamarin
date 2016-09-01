@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="#4a90e2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_weight="15"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/momentsiconmini"
+        android:id="@+id/imagegrid" />
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:rowCount="2"
+        android:columnCount="51"
+        android:layout_gravity="center">
+        <Button
+            android:background="#4a90e2"
+            android:id="@+id/goodButton"
+            android:text="GOOD"
+            android:layout_row="1"
+            android:layout_column="0" />
+        <Button
+            android:background="#4a90e2"
+            android:id="@+id/badButton"
+            android:text="BAD"
+            android:layout_row="1"
+            android:layout_column="50" />
+    </GridLayout>
+</LinearLayout>
